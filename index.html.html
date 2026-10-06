@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amir Strikers | Official Cricket Team</title>
+<meta name="description" content="Amir Strikers cricket team: owners, squad, live scorecard, match history, fixtures, news and new player registration.">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#d71920;--red2:#ff3b41;--black:#0c0c0f;--steel:#23252d;--grey:#f1f1f4;--white:#fff;--mute:#6b6e7a;--line:#e1e1e6}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Manrope,Arial,sans-serif;background:var(--white);color:var(--black);line-height:1.65;font-size:16.5px}
+h1,h2,h3,.an{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.015em;line-height:1.05}
+a{color:inherit}
+img{display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 5%}
+/* ticker */
+.tick{background:var(--red);color:var(--white);font-weight:700;font-size:.85rem;overflow:hidden;white-space:nowrap}
+.tick div{display:inline-block;padding:7px 0;animation:mq 32s linear infinite}
+.tick span{margin:0 34px}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:var(--black)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--white)}
+.mark{width:44px;height:44px;background:var(--red);color:var(--white);display:grid;place-items:center;font:1.3rem Anton;transform:skewX(-10deg);overflow:hidden}
+.mark img{width:50%;height:50%;object-fit:cover;transform:skewX(10deg) scale(1.2)}
+.brand b{font:1.55rem Anton;text-transform:uppercase;letter-spacing:.03em}
+nav{display:flex;align-items:center;gap:2px}
+nav a{color:#c9cbd4;text-decoration:none;font-weight:700;font-size:.9rem;padding:8px 11px}
+nav a:hover{color:var(--red2)}
+nav a.cta{background:var(--red);color:var(--white);margin-left:8px;transform:skewX(-10deg);padding:9px 20px}
+nav a.cta:hover{background:var(--red2);color:var(--white)}
+.burger{display:none;background:var(--red);border:0;color:var(--white);width:44px;height:40px;font-size:1.3rem;cursor:pointer}
+/* hero */
+.hero{position:relative;background:var(--black);color:var(--white);overflow:hidden;padding:80px 0 0}
+.hero:before{content:"";position:absolute;right:-6%;top:0;bottom:0;width:48%;background:var(--red);clip-path:polygon(26% 0,100% 0,100% 100%,0 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr 1fr;gap:30px;align-items:center;padding-bottom:70px}
+.hero small{font-weight:800;color:var(--red2);letter-spacing:.12em;text-transform:uppercase}
+.hero h1{font-size:clamp(4rem,12vw,9.5rem);margin:10px 0 6px}
+.hero h1 b{font-weight:400;color:transparent;-webkit-text-stroke:2px var(--white);display:block}
+.hero p{max-width:470px;color:#c9cbd4;margin:16px 0 28px}
+.btn{display:inline-block;background:var(--red);color:var(--white);padding:15px 34px;font:1.15rem Anton;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;border:2px solid var(--red);cursor:pointer;transform:skewX(-10deg)}
+.btn:hover{background:var(--red2);border-color:var(--red2)}
+.btn.o{background:transparent;border-color:var(--white);margin-left:10px}
+.btn.o:hover{background:var(--white);color:var(--black)}
+.btn.sm{padding:10px 20px;font-size:1rem;margin:10px 8px 0 0}
+.crest{justify-self:center;width:min(500px,75%);aspect-ratio:1;background:var(--black);border:8px solid var(--white);transform:rotate(45deg);display:grid;place-items:center;overflow:hidden}
+.crest img{width:100%;height:100%;max-width:none;object-fit:cover;transform:rotate(-45deg)}
+.cd{position:relative;background:var(--steel);color:var(--white)}
+.cd .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding-top:20px;padding-bottom:20px}
+.cd h3{font-size:1.5rem}.cd h3 em{font-style:normal;color:var(--red2)}
+.tm{display:flex;gap:12px}
+.tm div{background:var(--black);min-width:76px;padding:8px 10px;text-align:center;border-bottom:3px solid var(--red)}
+.tm b{display:block;font:1.9rem Anton}.tm span{font-size:.7rem;color:#9a9dab;font-weight:700;text-transform:uppercase}
+/* general */
+section{padding:84px 0}
+.alt{background:var(--grey)}
+.blk{background:var(--black);color:var(--white)}
+.sh{margin-bottom:38px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:10px}
+.sh h2{font-size:clamp(2.4rem,6vw,4rem)}
+.sh h2:before{content:"";display:block;width:56px;height:8px;background:var(--red);margin-bottom:14px;transform:skewX(-20deg)}
+.sh p{color:var(--mute);max-width:420px}.blk .sh p{color:#9a9dab}
+/* about */
+.ab{display:grid;grid-template-columns:1.2fr 1fr;gap:50px}
+.ab p{color:#3b3d47;margin-bottom:14px}
+.pil{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pil div{background:var(--white);padding:20px;border-top:5px solid var(--red)}
+.pil h3{font-size:1.3rem}.pil span{font-size:.9rem;color:var(--mute)}
+/* owners */
+.ow{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+.oc{display:grid;grid-template-columns:150px 1fr;background:var(--steel);border-left:8px solid var(--red)}
+.ph{background:linear-gradient(160deg,#3a3d48,#17181d);display:grid;place-items:center;font:3.4rem Anton;color:rgba(255,255,255,.28);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:top}
+.oc .bd{padding:24px 20px}
+.oc h3{font-size:1.9rem}.oc em{font-style:normal;color:var(--red2);font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+.oc a{display:inline-block;margin-top:12px;background:var(--black);padding:8px 16px;text-decoration:none;font-weight:700;font-size:.95rem;border:1px solid #444}
+.oc a:hover{background:var(--red);border-color:var(--red)}
+/* squad */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{background:var(--white);border:2px solid var(--black);padding:8px 20px;font:1.05rem Anton;text-transform:uppercase;letter-spacing:.05em;cursor:pointer}
+.tab.on,.tab:hover{background:var(--red);border-color:var(--red);color:var(--white)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px}
+.pc{background:var(--white);position:relative;overflow:hidden;transition:transform .2s;cursor:pointer}
+.pc:hover{transform:translateY(-5px)}
+.pc .ph{aspect-ratio:4/5;font-size:5.5rem}
+.pc .bd{padding:14px 16px 16px;border-bottom:6px solid var(--red)}
+.pc h3{font-size:1.5rem}.pc small{color:var(--mute);font-weight:600}
+.pc .rb{position:absolute;top:12px;left:0;background:var(--red);color:var(--white);padding:4px 14px 4px 10px;font:.95rem Anton;letter-spacing:.06em;text-transform:uppercase;clip-path:polygon(0 0,100% 0,88% 100%,0 100%)}
+.mini{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);text-align:center}
+.mini span{font-size:.65rem;color:var(--mute);font-weight:700;text-transform:uppercase}
+.mini b{display:block;font:1.15rem Anton;color:var(--black)}
+/* live scorecard */
+.sbh{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;background:var(--steel);border-top:6px solid var(--red);padding:26px;margin-bottom:20px}
+.sbh small{color:var(--red2);font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.big{font:5rem Anton;line-height:1}
+.sbh span{color:#9a9dab;font-weight:700}
+.sbr{text-align:right;max-width:420px}
+.sbr b{font:1.6rem Anton;text-transform:uppercase;display:block}
+.sbr p{color:var(--red2);font-weight:800;margin-top:8px}
+.ovs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;align-items:center;font-weight:800}
+.ovs i{font-style:normal;min-width:36px;height:36px;padding:0 8px;border-radius:18px;background:var(--white);color:var(--black);display:grid;place-items:center;font:.95rem Anton}
+.ovs i.w{background:var(--red);color:var(--white)}
+.ovs i.b{background:#1a7f37;color:#fff}
+.two{display:grid;grid-template-columns:1.5fr 1fr;gap:20px}
+#live .tr td{color:var(--black)}
+.fw{color:#9a9dab;font-size:.9rem;margin:12px 0}
+.fw2{color:#555;font-size:.85rem;margin-top:6px}
+.lk{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.lk input{max-width:240px}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+/* phone-style scorer panel */
+.sp2{max-width:460px;margin:24px auto 0;background:#fff;color:#111;box-shadow:0 10px 40px rgba(0,0,0,.5);font-family:Arial,sans-serif;font-size:14px}
+.sph{background:#0f5d52;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:13px 14px;font-weight:700;font-size:15px}
+.sph button{background:none;border:0;color:#fff;font-weight:700;letter-spacing:.06em;cursor:pointer;font-size:13px}
+.ssum{display:flex;justify-content:space-between;padding:10px 14px 2px;font-weight:700}
+.sbt{padding:0 14px 8px;font-size:12px;color:#444;border-bottom:1px solid #ddd}
+.spb{padding:12px 14px}
+.exr{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:12px}
+.exr label{display:flex;gap:5px;align-items:center;font-size:13px;font-weight:400;cursor:pointer}
+.exr input{width:15px;height:15px;padding:0}
+.rr{display:flex;justify-content:space-between;margin-bottom:12px}
+.rr button{background:none;border:0;display:flex;align-items:center;gap:4px;font-size:16px;cursor:pointer;padding:8px 3px}
+.rr .rd{width:15px;height:15px;border:2px solid #0f5d52;border-radius:50%;display:inline-block;pointer-events:none}
+.rr button:hover .rd{background:#0f5d52}
+.pov{font-size:11px;font-weight:700;color:#444;margin-bottom:12px;letter-spacing:.05em}
+.wr{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+.wr select{flex:1;padding:8px;font-size:13px;min-width:0}
+.wr2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px}
+.b2{padding:9px 14px;border:1px solid #0f5d52;background:#fff;color:#0f5d52;font:700 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em;cursor:pointer}
+.b2:hover{background:#0f5d52;color:#fff}
+.pcs{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin-bottom:14px}
+.pcd{text-align:center}
+.pcd .ico{font-size:34px;display:block;line-height:1.2}
+.pcd .nmb{border:1px solid #999;border-radius:4px;padding:5px;font-size:13px;margin:4px 0 2px}
+.pcd small{color:#555;font-size:12px}
+.pres{text-align:center;font-size:12px;color:#0f5d52;font-weight:700;margin-top:10px}
+.bnav{display:flex;justify-content:space-around;border-top:1px solid #ddd;padding:8px 0;background:#fafafa}
+.bnav button{background:none;border:0;display:flex;flex-direction:column;align-items:center;font-size:11px;color:#555;cursor:pointer;gap:2px}
+.bnav button i{font-style:normal;font-size:20px}
+/* match history */
+.mhs{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.mc{background:var(--white);padding:22px;border-left:8px solid var(--red);cursor:pointer;transition:transform .2s}
+.mc:hover{transform:translateY(-4px)}
+.mc small{color:var(--mute);font-weight:700}
+.mc h3{font-size:1.5rem;margin:6px 0}
+.mc p{color:#33353f;font-weight:600}
+.mc b{display:block;margin-top:8px;color:var(--red)}
+/* fixtures, news */
+.fx{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.fc{background:var(--steel);color:var(--white);padding:24px;border-top:5px solid var(--red)}
+.fc small{color:#9a9dab;font-weight:700}
+.fc .vs{font:1.6rem Anton;text-transform:uppercase;margin:12px 0 8px}.fc .vs i{font-style:normal;color:var(--red2)}
+.nw{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.nc{background:var(--white)}
+.nc .im{aspect-ratio:16/9;background:linear-gradient(135deg,var(--steel),var(--black));overflow:hidden}
+.nc .im img{width:100%;height:100%;object-fit:cover}
+.nc .bd{padding:20px}.nc small{color:var(--red);font-weight:800;text-transform:uppercase}
+.nc h3{font-size:1.35rem;margin:6px 0}.nc p{color:var(--mute);font-size:.95rem}
+/* training */
+.tr{width:100%;border-collapse:collapse;background:var(--white)}
+.tr th{background:var(--black);color:var(--white);font:1.05rem Anton;text-transform:uppercase;letter-spacing:.05em;text-align:left;padding:14px 18px}
+.tr td{padding:14px 18px;border-bottom:1px solid var(--line)}
+.tr tr:last-child td{border:0}
+.tw{overflow-x:auto}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gal div{aspect-ratio:1;background:linear-gradient(135deg,var(--steel),var(--black));overflow:hidden}
+.gal div:first-child{grid-column:span 2;grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gal div:hover img{transform:scale(1.06)}
+/* register */
+.rg{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:start}
+.rg ul{list-style:none;margin-top:10px}.rg li{padding:9px 0 9px 30px;position:relative;color:#d4d5dc}
+.rg li:before{content:"";position:absolute;left:4px;top:18px;width:12px;height:12px;background:var(--red);transform:skewX(-20deg)}
+form{background:var(--white);color:var(--black);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px;border-top:8px solid var(--red)}
+form h3{grid-column:1/-1;font-size:2rem}
+.f{display:flex;flex-direction:column;gap:5px}.f.full{grid-column:1/-1}
+label{font-weight:800;font-size:.85rem}
+input,select,textarea{font:inherit;padding:11px 12px;border:2px solid var(--line);background:var(--grey);width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--red);background:var(--white)}
+input[type=checkbox]{width:auto}
+form .btn{grid-column:1/-1;width:100%;transform:none}
+.note{grid-column:1/-1;font-size:.85rem;color:var(--mute);text-align:center}
+/* faq */
+details{background:var(--white);border-left:6px solid var(--red);margin-bottom:12px;padding:16px 20px}
+summary{font-weight:800;cursor:pointer}
+details p{margin-top:10px;color:var(--mute)}
+/* sponsors, contact */
+.sp{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sp div{border:2px dashed #3c3f4a;padding:30px 10px;text-align:center;color:#8b8e9b;font-weight:700}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.cc{background:var(--grey);padding:26px;border-bottom:6px solid var(--red)}
+.cc h3{font-size:1.6rem}.cc p{color:var(--mute)}
+.cc a{display:inline-block;margin:10px 14px 0 0;font-weight:800;text-decoration:none;border-bottom:3px solid var(--red)}
+footer{background:var(--black);color:#8b8e9b;padding:44px 0 24px;text-align:center}
+footer .brand{justify-content:center;margin-bottom:14px}
+.soc{display:flex;gap:10px;justify-content:center;margin:14px 0;flex-wrap:wrap}
+.soc a{border:1px solid #444;color:var(--white);padding:7px 16px;text-decoration:none;font-weight:700;font-size:.9rem}
+.soc a:hover{background:var(--red);border-color:var(--red)}
+.top{position:fixed;right:18px;bottom:18px;background:var(--red);color:var(--white);width:46px;height:46px;display:grid;place-items:center;text-decoration:none;font-size:1.3rem;z-index:40}
+:focus-visible{outline:3px solid var(--red2);outline-offset:2px}
+/* popup windows */
+.md{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;z-index:100;padding:16px}
+.md.on{display:flex}
+#pk{z-index:120}
+.mb{background:var(--white);color:var(--black);width:min(760px,100%);max-height:90vh;overflow:auto;padding:28px;border-top:8px solid var(--red);position:relative}
+.mb .x{position:absolute;right:12px;top:8px;background:none;border:0;font-size:1.6rem;cursor:pointer}
+.mh{display:flex;gap:18px;align-items:center;margin-bottom:20px}
+.mh .ph{width:110px;height:130px;flex:none}
+.mh small{color:var(--red);font-weight:800;text-transform:uppercase}
+.mh h3{font-size:2.2rem}
+.mb h4{font:1.3rem Anton;text-transform:uppercase;margin:14px 0 10px}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px}
+.sg div{background:var(--grey);padding:12px;text-align:center;border-bottom:4px solid var(--red)}
+.sg b{display:block;font:1.7rem Anton}
+.sg span{font-size:.75rem;color:var(--mute);font-weight:700;text-transform:uppercase}
+.mb label{display:block;margin:12px 0 4px}
+.mb details{margin-top:14px}
+@media(max-width:860px){
+ .hero:before{width:100%;clip-path:polygon(0 70%,100% 55%,100% 100%,0 100%);right:0}
+ .hero .wrap,.ab,.rg,.two{grid-template-columns:1fr}
+ .crest{order:-1;width:170px}
+ .gal,.sp{grid-template-columns:repeat(2,1fr)}
+ .burger{display:block}
+ nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--black);flex-direction:column;align-items:stretch;padding:10px 5% 20px}
+ nav.open{display:flex}nav a.cta{margin:8px 0 0;text-align:center;transform:none}
+ form{grid-template-columns:1fr}.oc{grid-template-columns:110px 1fr}
+ .sbr{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){.tick div{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="tick"><div id="tk"></div></div>
+
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="mark"><img class="lg" alt="Amir Strikers logo"></span><b>Amir Strikers</b></a>
+  <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  <nav id="menu" onclick="this.classList.remove('open')">
+   <a href="#about">About</a><a href="#owners">Owners</a><a href="#squad">Squad</a><a href="#live">Live</a><a href="#matches">Matches</a><a href="#fixtures">Fixtures</a><a href="#news">News</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+   <a class="cta" href="#register">Join Us</a>
+  </nav>
+ </div>
+</header>
+
+<div class="hero" id="home">
+ <div class="wrap">
+  <div>
+   <small>Official Cricket Team</small>
+   <h1>Amir <b>Strikers</b></h1>
+   <p>One team. One goal. We play hard, play fair and play to win. New players are welcome.</p>
+   <a class="btn" href="#register">Register Now</a><a class="btn o" href="#squad">View Squad</a>
+  </div>
+  <div class="crest"><img class="lg" alt="Amir Strikers logo"></div>
+ </div>
+ <div class="cd"><div class="wrap">
+  <h3>Next Match <em id="nmTitle">Date to be announced</em></h3>
+  <div class="tm" id="tm"></div>
+ </div></div>
+</div>
+
+<section id="about"><div class="wrap">
+ <div class="sh"><h2>About the Team</h2></div>
+ <div class="ab">
+  <div>
+   <p>Amir Strikers is a cricket team built on friendship, discipline and a hunger to win. Our squad has strong batsmen, sharp bowlers and match-winning all-rounders.</p>
+   <p>Our owners back every player with kit, training and match opportunities. If you love cricket and want to play with a serious team, register and we will call you for trials.</p>
+  </div>
+  <div class="pil">
+   <div><h3>Teamwork</h3><span>We win and lose together.</span></div>
+   <div><h3>Discipline</h3><span>Fitness and respect for the game.</span></div>
+   <div><h3>Fair Play</h3><span>Spirit of cricket, always.</span></div>
+   <div><h3>Ambition</h3><span>Every match is a step up.</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="owners" class="blk"><div class="wrap">
+ <div class="sh"><h2>Team Owners</h2><p>The people behind Amir Strikers.</p></div>
+ <div class="ow" id="ow"></div>
+</div></section>
+
+<section id="squad" class="alt"><div class="wrap">
+ <div class="sh"><h2>Our Squad</h2><p>Click a player to see his full history.</p></div>
+ <div class="tabs" id="tabs"></div>
+ <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="live" class="blk"><div class="wrap">
+ <div class="sh"><h2>Live Scorecard</h2><p>Score updated ball by ball by our scorer.</p></div>
+ <div id="sb"></div>
+ <button class="btn sm" id="shr">Share score on WhatsApp</button>
+
+ <div id="setup" hidden>
+  <h3 style="margin:24px 0 10px">Start a new match</h3>
+  <div class="row">
+   <input id="s1" value="Amir Strikers" placeholder="Our team">
+   <input id="s2" placeholder="Opponent team">
+   <input id="so" type="number" min="1" max="50" value="10" placeholder="Overs">
+   <select id="sf"><option value="us">We bat first</option><option value="them">Opponent bats first</option></select>
+  </div>
+  <button class="btn sm" id="sgo">Start match</button>
+ </div>
+
+ <div class="sp2" id="spn" hidden>
+  <div class="sph"><span>Cricket ScoreCard</span><button id="un">UNDO</button></div>
+  <div class="ssum"><span id="ph1"></span><span id="ph2"></span></div>
+  <div class="sbt" id="pbt"></div>
+  <div class="spb">
+   <div class="exr">
+    <label><input type="checkbox" id="xw"> Wide</label>
+    <label><input type="checkbox" id="xn"> No ball</label>
+    <label><input type="checkbox" id="xb"> Byes</label>
+    <label><input type="checkbox" id="xl"> Leg byes</label>
+   </div>
+   <div class="rr" id="rr">
+    <button data-r="0"><i class="rd"></i>0</button><button data-r="1"><i class="rd"></i>1</button><button data-r="2"><i class="rd"></i>2</button><button data-r="3"><i class="rd"></i>3</button><button data-r="4"><i class="rd"></i>4</button><button data-r="5"><i class="rd"></i>5</button><button data-r="6"><i class="rd"></i>6</button>
+   </div>
+   <div class="pov" id="pov"></div>
+   <div class="wr">
+    <button class="b2" id="rt">Retire</button>
+    <select id="hw"><option>bowled</option><option>caught</option><option>lbw</option><option>run out</option><option>stumped</option><option>hit wicket</option></select>
+    <button class="b2" id="wk">OK</button>
+   </div>
+   <div class="pcs" id="pcs"></div>
+   <div class="wr2">
+    <button class="b2" id="sw">Switch bat</button>
+    <button class="b2" id="en">End innings</button>
+   </div>
+   <div class="pres" id="pres"></div>
+  </div>
+  <div class="bnav">
+   <button onclick="document.getElementById('sb').scrollIntoView({behavior:'smooth'})"><i>🏠</i>Home</button>
+   <button id="psum"><i>📋</i>Summary</button>
+   <button id="pshr"><i>🟢</i>Share</button>
+   <button id="nm"><i>🗑</i>New match</button>
+  </div>
+ </div>
+
+ <div class="lk" id="lk"><input id="lpw" type="password" placeholder="Scorer passcode"><button class="btn sm" id="lgo">Scorer login</button></div>
+</div></section>
+
+<section id="matches" class="alt"><div class="wrap">
+ <div class="sh"><h2>Match History</h2><p>Click a match to see the full scorecard.</p></div>
+ <div class="mhs" id="mhs"></div>
+</div></section>
+
+<section id="fixtures"><div class="wrap">
+ <div class="sh"><h2>Fixtures &amp; Results</h2><p>Edit these cards with your real match details.</p></div>
+ <div class="fx">
+  <div class="fc"><small>UPCOMING · 7 Oct &amp; 4:00 PM TBA</small><div class="vs">Amir Strikers <i>vs</i> Posion Star</div><small>Band Cricket Ground</small></div>
+  <div class="fc"><small>UPCOMING · 9 Oct &amp; 4:00 PM TBA</small><div class="vs">Amir Strikers <i>vs</i> Posion star</div><small>Band Cricket Ground</small></div>
+  <div class="fc"><small>UPCOMING · 11 Oct &amp; 4:00 PM TBA</small><div class="vs">Amir Strikers <i>vs</i> Posion star</div><small>Band Cricket Ground</small></div>
+  <div class="fc"><small>LATEST RESULT</small><div class="vs">See Match History</div><small>Finished matches are saved automatically</small></div>
+ </div>
+</div></section>
+
+<section id="news" class="alt"><div class="wrap">
+ <div class="sh"><h2>Team News</h2><p>Announcements and updates.</p></div>
+ <div class="nw" id="nw"></div>
+</div></section>
+
+<section id="training"><div class="wrap">
+ <div class="sh"><h2>Training Schedule</h2><p>Edit the days, times and ground to match your practice.</p></div>
+ <div class="tw"><table class="tr">
+  <tr><th>Day</th><th>Session</th><th>Time</th><th>Ground</th></tr>
+  <tr><td>Monday</td><td>Batting practice</td><td>To be announced</td><td>To be announced</td></tr>
+  <tr><td>Wednesday</td><td>Bowling and fielding</td><td>To be announced</td><td>To be announced</td></tr>
+  <tr><td>Saturday</td><td>Practice match</td><td>To be announced</td><td>To be announced</td></tr>
+ </table></div>
+</div></section>
+
+<section id="gallery" class="alt"><div class="wrap">
+ <div class="sh"><h2>Gallery</h2><p>Matches, practice and celebrations.</p></div>
+ <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="register" class="blk"><div class="wrap rg">
+ <div>
+  <div class="sh"><h2>New Player Registration</h2></div>
+  <p style="color:#c9cbd4">Want to play for Amir Strikers? Fill in the form and send it to an owner on WhatsApp.</p>
+  <ul><li>Batsmen, bowlers, all-rounders and wicket-keepers</li><li>Every application is reviewed by the owners</li><li>Selected players are called for trials</li><li>Registration is free</li></ul>
+ </div>
+ <form id="regForm" novalidate>
+  <h3>Player Application</h3>
+  <div class="f"><label for="n">Full name *</label><input id="n"></div>
+  <div class="f"><label for="a">Age *</label><input id="a" type="number" min="10" max="60"></div>
+  <div class="f"><label for="p">Phone / WhatsApp *</label><input id="p" type="tel" placeholder="03XXXXXXXXX"></div>
+  <div class="f"><label for="c">City / Area *</label><input id="c"></div>
+  <div class="f"><label for="r">Playing role</label><select id="r"><option>Batsman</option><option>Bowler</option><option>All-Rounder</option><option>Wicket-Keeper</option></select></div>
+  <div class="f"><label for="h">Batting hand</label><select id="h"><option>Right-hand</option><option>Left-hand</option></select></div>
+  <div class="f"><label for="b">Bowling style</label><select id="b"><option>Not a bowler</option><option>Fast</option><option>Medium</option><option>Off spin</option><option>Leg spin</option><option>Left-arm spin</option></select></div>
+  <div class="f"><label for="x">Experience</label><select id="x"><option>Beginner</option><option>1-3 years</option><option>3-5 years</option><option>5+ years</option></select></div>
+  <div class="f full"><label for="m">Past teams / achievements (optional)</label><textarea id="m" rows="3"></textarea></div>
+  <div class="f full"><label for="o">Send application to</label><select id="o"><option value="923489747077">Abbas Khan</option><option value="923357766814">Imad Ali</option></select></div>
+  <button class="btn" type="submit">Send on WhatsApp</button>
+  <p class="note" id="msg">WhatsApp will open with your details ready to send.</p>
+ </form>
+</div></section>
+
+<section id="faq" class="alt"><div class="wrap">
+ <div class="sh"><h2>Questions</h2></div>
+ <details><summary>How can I join Amir Strikers?</summary><p>Fill in the registration form. The owners will review it and call you for a trial.</p></details>
+ <details><summary>Is there a registration fee?</summary><p>No. Registration is free.</p></details>
+ <details><summary>Which players can apply?</summary><p>Batsmen, bowlers, all-rounders and wicket-keepers of any experience level.</p></details>
+ <details><summary>Do I need my own kit?</summary><p>Please ask the owners when they contact you.</p></details>
+</div></section>
+
+<section id="sponsors" class="blk"><div class="wrap">
+ <div class="sh"><h2>Our Sponsors</h2><p>Want your brand on our kit? Contact the owners.</p></div>
+ <div class="sp"><div>Sponsor Logo</div><div>Sponsor Logo</div><div>Sponsor Logo</div><div>Sponsor Logo</div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <div class="sh"><h2>Contact Us</h2></div>
+ <div class="ct">
+  <div class="cc"><h3>Abbas Khan</h3><p>Team Owner</p><a href="tel:03489747077">Call 03489747077</a><a href="https://wa.me/923489747077">WhatsApp</a></div>
+  <div class="cc"><h3>Imad Ali</h3><p>Team Owner</p><a href="tel:03357766814">Call 03357766814</a><a href="https://wa.me/923357766814">WhatsApp</a></div>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <a class="brand" href="#home"><span class="mark"><img class="lg" alt="Amir Strikers logo"></span><b>Amir Strikers</b></a>
+ <!-- Put your real social media links in href -->
+ <div class="soc"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">YouTube</a><a href="#" id="mgrBtn">Manager</a></div>
+ <p>&copy; 2026 Amir Strikers. All rights reserved.</p>
+</div></footer>
+<a class="top" href="#home" aria-label="Back to top">↑</a>
+
+<!-- player history / match scorecard window -->
+<div class="md" id="md"><div class="mb" id="mb"></div></div>
+
+<!-- name picker window (used by the scorecard) -->
+<div class="md" id="pk"><div class="mb" style="max-width:420px">
+ <h3 id="pkT" style="margin-bottom:10px"></h3>
+ <div id="pkSW"><label for="pkS">Choose from squad</label><select id="pkS"></select></div>
+ <label for="pkI">Or type a name</label><input id="pkI">
+ <button class="btn sm" id="pkOk">OK</button>
+</div></div>
+
+<!-- manager window -->
+<div class="md" id="mg"><div class="mb">
+ <button class="x" onclick="closeM()">✕</button>
+ <h3>Manager</h3>
+ <div id="mgLock">
+  <label for="pw">Passcode</label><input id="pw" type="password">
+  <button class="btn sm" id="pwBtn">Unlock</button>
+ </div>
+ <div id="mgBody" hidden>
+  <h4>Save data for every visitor</h4>
+  <p class="fw2">Matches and player history are saved in this browser. Press Copy, then in the code replace the two lines <b>const BASE_STATS={};</b> and <b>const BASE_MATCHES=[];</b> with what you copied.</p>
+  <button class="btn sm" id="cp">Copy data code</button>
+  <button class="btn sm" id="rs">Reset all data on this browser</button>
+  <p class="note" id="mm"></p>
+
+  <h4>Add stats from a scorecard link</h4>
+  <label for="sl">Scorecard link</label>
+  <input id="sl" placeholder="https://...">
+  <button class="btn sm" id="chk">Check scorecard</button>
+
+  <details><summary>Add a player's match manually</summary>
+   <label for="mp">Player</label><select id="mp"></select>
+   <h4>Batting</h4>
+   <div class="row">
+    <input id="mr" type="number" min="0" placeholder="Runs">
+    <input id="mb2" type="number" min="0" placeholder="Balls">
+    <input id="m4" type="number" min="0" placeholder="Fours">
+    <input id="m6" type="number" min="0" placeholder="Sixes">
+   </div>
+   <label><input type="checkbox" id="mo"> Got out</label>
+   <h4>Bowling and fielding</h4>
+   <div class="row">
+    <input id="mv" placeholder="Overs (3.2)">
+    <input id="mc" type="number" min="0" placeholder="Runs given">
+    <input id="mw" type="number" min="0" placeholder="Wickets">
+    <input id="mt" type="number" min="0" placeholder="Catches">
+   </div>
+   <button class="btn sm" id="ma">Add to check list</button>
+  </details>
+
+  <h4>Check list</h4>
+  <div id="pv"></div>
+  <button class="btn sm" id="ok" hidden>Confirm and update history</button>
+ </div>
+</div></div>
+
+<script>
+/* ============ EDIT HERE: ALL IMAGE LINKS AND TEAM DETAILS ============ */
+
+/* 1. LOGO (used in menu, big hero and footer) */
+const LOGO="abbaskhan.jpeg";
+
+/* 2. Next match: example "2026-11-15T16:00:00" (leave empty if not decided) */
+const nextMatch="";
+const nextMatchName="vs Opponent";
+
+/* 3. Top moving bar messages */
+const ticker=["Amir Strikers","New player registration is open","Contact the owners to join the team","Follow us for match updates"];
+
+/* 4. OWNERS: change name, phone and the img link */
+const owners=[
+ {name:"Abbas Khan",phone:"03489747077",img:"abbasowner.jpeg"},
+ {name:"Imad Ali",phone:"03357766814",img:"imad.jpeg"}
+];
+
+/* 5. PLAYERS: roles must be exactly All-Rounder, Batsman or Bowler.
+      If a scorecard spells a name differently, add alias:["other spelling"] to that player. */
+const players=[
+ {name:"Taimoor",role:"All-Rounder",note:"Left-hand",img:"taimoor.jpeg"},
+ {name:"Farhan Ali",role:"All-Rounder",note:"",img:"farhan.jpeg"},
+ {name:"Almas Khan",role:"Batsman",note:"",img:"almas.jpeg"},
+ {name:"Rehan",role:"Batsman",note:"Left-hand",img:"rehan.jpeg"},
+ {name:"Salman Khan",role:"Batsman",note:"",img:"salman.jpeg"},
+ {name:"Maaz VK",role:"Batsman",note:"",img:"maaz.jpeg"},
+ {name:"Hamza Khan",role:"Batsman",note:"",img:"hamza.jpeg"},
+ {name:"Ijaz Khan",role:"Batsman",note:"",img:"ijaz.jpeg"},
+ {name:"Fawad Khan",role:"Bowler",note:"",img:"fawad.jpeg"},
+ {name:"Hassan Jr",role:"Bowler",note:"",img:"hassan.jpeg"},
+ {name:"Shehbaz",role:"Bowler",note:"",img:"rana.jpeg"},
+ {name:"Altaf Khan",role:"Bowler",note:"",img:"altaf.jpeg"}
+];
+
+/* 6. NEWS CARDS: change tag, title, text and img link */
+const newsCards=[
+ {tag:"Announcement",title:"New player trials are open",text:"Batsmen, bowlers and all-rounders can apply using the registration form below.",img:"player.jpeg"},
+ {tag:"Team",title:"Welcome to our new website",text:"Follow the squad, fixtures and news of Amir Strikers in one place.",img:"https://picsum.photos/seed/news-two/800/450"},
+ {tag:"Coming soon",title:"Match report",text:"Our next match report will be posted here after the game.",img:"https://picsum.photos/seed/news-three/800/450"}
+];
+
+/* 7. GALLERY: 5 pictures (the first one shows large) */
+const gallery=[
+ {alt:"Team photo",img:"ass.jpeg"},
+ {alt:"Match",img:"amir.jpeg"},
+ {alt:"Practice",img:"amir2.jpeg"},
+ {alt:"Trophy",img:"amir3.jpeg"},
+ {alt:"Celebration",img:"amir4.jpeg"}
+];
+
+/* 8. PASSCODE for Manager and Scorer (change it) */
+const MANAGER_PASS="0804";
+
+/* 9. WICKETS that end an innings (10 for 11 players; use fewer if you play with fewer players) */
+const MAXW=10;
+
+/* 10. SAVED DATA: replace these two lines with the output of "Copy data code" */
+const BASE_STATS={};
+const BASE_MATCHES=[];
+
+/* ======================= END OF EDIT AREA ======================= */
+
+const $=id=>document.getElementById(id);
+document.querySelectorAll("img.lg").forEach(i=>i.src=LOGO);
+const t=ticker.map(x=>`<span>${x}</span>`).join("");$("tk").innerHTML=t+t;
+const ph=o=>`<img src="${o.img}" alt="${o.name}" loading="lazy">`;
+$("ow").innerHTML=owners.map(o=>`<div class="oc"><div class="ph">${ph(o)}</div><div class="bd"><em>Team Owner</em><h3>${o.name}</h3><a href="tel:${o.phone}">${o.phone}</a></div></div>`).join("");
+$("nw").innerHTML=newsCards.map(n=>`<div class="nc"><div class="im"><img src="${n.img}" alt="${n.title}" loading="lazy"></div><div class="bd"><small>${n.tag}</small><h3>${n.title}</h3><p>${n.text}</p></div></div>`).join("");
+$("gal").innerHTML=gallery.map(g=>`<div><img src="${g.img}" alt="${g.alt}" loading="lazy"></div>`).join("");
+
+/* ===== PLAYER STATS AND SQUAD ===== */
+const cats=["All","Batsman","All-Rounder","Bowler"];
+const ORDER=["Batsman","All-Rounder","Bowler"];
+const blank=()=>({m:0,inn:0,no:0,r:0,b:0,f:0,s:0,hs:0,h50:0,h100:0,w:0,ob:0,rc:0,ct:0});
+const rd=k=>{try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}};
+let STATS=rd("as_stats")||BASE_STATS,DONE=rd("as_done")||[],pend=[],pendUrl="",cur="All";
+const st=n=>Object.assign(blank(),STATS[n]||{});
+const saveAll=()=>{try{localStorage.setItem("as_stats",JSON.stringify(STATS));localStorage.setItem("as_done",JSON.stringify(DONE))}catch(e){}};
+const fx2=(a,b,d=2)=>b>0?(a/b).toFixed(d):"-";
+const ovs=b=>Math.floor(b/6)+(b%6?"."+b%6:"");
+const ov=x=>{const p=String(x||"0").split(".");return(+p[0]||0)*6+(+p[1]||0)};
+const calc=s=>({avg:fx2(s.r,s.inn-s.no),sr:fx2(s.r*100,s.b,1),eco:fx2(s.rc*6,s.ob),bavg:fx2(s.rc,s.w),ov:ovs(s.ob)});
+
+function show(c){
+ cur=c;
+ $("tabs").innerHTML=cats.map(x=>`<button class="tab ${x===c?"on":""}" data-c="${x}">${x==="All"?"All Players":x+"s"}</button>`).join("");
+ $("grid").innerHTML=players.filter(p=>c==="All"||p.role===c).sort((a,b)=>ORDER.indexOf(a.role)-ORDER.indexOf(b.role)).map(p=>{
+  const s=st(p.name),k=calc(s);
+  const mi=p.role==="Bowler"?[[s.m,"Mat"],[s.w,"Wkts"],[k.eco,"Eco"],[k.ov,"Ov"]]:[[s.m,"Mat"],[s.r,"Runs"],[k.sr,"SR"],[s.w,"Wkts"]];
+  return `<div class="pc" data-n="${p.name}" tabindex="0"><div class="ph">${ph(p)}</div><span class="rb">${p.role}</span><div class="bd"><h3>${p.name}</h3><small>${p.note||"Amir Strikers"}</small><div class="mini">${mi.map(x=>`<span><b>${x[0]}</b>${x[1]}</span>`).join("")}</div></div></div>`}).join("");
+}
+function openP(n){
+ const p=players.find(x=>x.name===n),s=st(n),k=calc(s);
+ const bat=[["Matches",s.m],["Innings",s.inn],["Runs",s.r],["Balls faced",s.b],["Highest score",s.hs],["Average",k.avg],["Strike rate",k.sr],["Fours",s.f],["Sixes",s.s],["Fifties",s.h50],["Hundreds",s.h100],["Not outs",s.no]];
+ const bowl=[["Wickets",s.w],["Overs",k.ov],["Runs given",s.rc],["Economy",k.eco],["Bowling avg",k.bavg],["Catches",s.ct]];
+ const g=a=>`<div class="sg">${a.map(r=>`<div><b>${r[1]}</b><span>${r[0]}</span></div>`).join("")}</div>`;
+ const parts=[["Batting",bat],["Bowling and fielding",bowl]];
+ if(p.role==="Bowler")parts.reverse();
+ $("mb").innerHTML=`<button class="x" onclick="closeM()">✕</button><div class="mh"><div class="ph">${ph(p)}</div><div><small>${p.role}</small><h3>${p.name}</h3><p>${p.note||"Amir Strikers"}</p></div></div>${parts.map(x=>`<h4>${x[0]}</h4>${g(x[1])}`).join("")}`;
+ $("md").classList.add("on");
+}
+function closeM(){document.querySelectorAll(".md:not(#pk)").forEach(m=>m.classList.remove("on"))}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeM()});
+document.querySelectorAll(".md:not(#pk)").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)closeM()}));
+$("tabs").addEventListener("click",e=>{if(e.target.dataset.c)show(e.target.dataset.c)});
+$("grid").addEventListener("click",e=>{const c=e.target.closest(".pc");if(c)openP(c.dataset.n)});
+$("grid").addEventListener("keydown",e=>{if(e.key==="Enter"){const c=e.target.closest(".pc");if(c)openP(c.dataset.n)}});
+show("All");
+
+/* ---- scorecard link reader (Manager) ---- */
+const norm=s=>s.toLowerCase().replace(/\(.*?\)|[†*]/g,"").replace(/[^a-z ]/g," ").replace(/\s+/g," ").trim();
+const who=raw=>{const t=norm(raw);if(!t)return null;
+ return players.find(p=>[p.name,...(p.alias||[])].some(a=>{a=norm(a);return t===a||t.startsWith(a+" ")||(" "+t+" ").includes(" "+a+" ")||a.split(" ")[0]===t}))};
+function parse(html){
+ const doc=new DOMParser().parseFromString(html,"text/html"),map={};
+ const get=n=>map[n]||(map[n]={n,bat:null,bowl:null,ct:0,on:true});
+ doc.querySelectorAll("table").forEach(tb=>{
+  const rows=[...tb.querySelectorAll("tr")].map(r=>[...r.children].map(c=>c.textContent.replace(/\s+/g," ").trim()));
+  const hi=rows.findIndex(r=>r.some(c=>/^(r|runs)$/i.test(c))&&r.some(c=>/^(b|balls|w|wkts|o|overs)$/i.test(c)));
+  if(hi<0)return;
+  const h=rows[hi].map(c=>c.toLowerCase()),col=(...a)=>h.findIndex(x=>a.includes(x));
+  const isBowl=h.some(x=>["o","overs","econ","w","wkts"].includes(x));
+  rows.slice(hi+1).forEach(r=>{
+   const p=who(r[0]||"");if(!p)return;const o=get(p.name);
+   if(isBowl){
+    const ob=ov(r[col("o","overs")]),w=+r[col("w","wkts")]||0;
+    if(ob||w)o.bowl={ob,rc:+r[col("r","runs")]||0,w};
+   }else{
+    const R=r[col("r","runs")];if(R===""||R===undefined||isNaN(R))return;
+    o.bat={r:+R,b:+r[col("b","balls")]||0,f:+r[col("4s")]||0,s:+r[col("6s")]||0,out:!/not out/i.test(r.join(" "))};
+   }
+  });
+ });
+ return Object.values(map);
+}
+async function load(u){
+ for(const f of [u,"https://api.allorigins.win/raw?url="+encodeURIComponent(u)]){
+  try{const r=await fetch(f);if(r.ok)return await r.text()}catch(e){}
+ }
+ return null;
+}
+function renderPV(){
+ $("pv").innerHTML=pend.length?`<div class="tw"><table class="tr"><tr><th></th><th>Player</th><th>Batting</th><th>Bowling</th></tr>${pend.map((x,i)=>`<tr><td><input type="checkbox" data-i="${i}" ${x.on?"checked":""}></td><td>${x.n}</td><td>${x.bat?`${x.bat.r} (${x.bat.b}) 4s:${x.bat.f} 6s:${x.bat.s} ${x.bat.out?"out":"not out"}`:"-"}</td><td>${x.bowl?`${ovs(x.bowl.ob)} ov, ${x.bowl.rc} runs, ${x.bowl.w} wkts`:"-"}${x.ct?` · ${x.ct} catches`:""}</td></tr>`).join("")}</table></div>`:"";
+ $("ok").hidden=!pend.length;
+}
+$("pv").addEventListener("change",e=>{const i=e.target.dataset.i;if(i!==undefined)pend[i].on=e.target.checked});
+$("chk").onclick=async()=>{
+ const u=$("sl").value.trim(),m=$("mm");
+ if(!/^https?:\/\//i.test(u)){m.textContent="Please paste a full link starting with https://";return}
+ if(DONE.includes(u)){m.textContent="This scorecard was already added. It cannot be counted twice.";return}
+ m.textContent="Checking scorecard...";
+ const h=await load(u);
+ if(!h){m.textContent="Could not open this link. The site blocks it. Use Add manually.";return}
+ const found=parse(h);
+ if(!found.length){m.textContent="The page opened but no readable scorecard with your players was found. Many sites load scores with JavaScript. Use Add manually.";return}
+ pend=found;pendUrl=u;
+ m.textContent=`Found ${found.length} of your players. Check the list, untick any wrong ones, then confirm.`;renderPV();
+};
+$("ma").onclick=()=>{
+ const g=id=>+$(id).value||0;
+ pend.push({n:$("mp").value,on:true,ct:g("mt"),
+  bat:(g("mr")||g("mb2")||$("mo").checked)?{r:g("mr"),b:g("mb2"),f:g("m4"),s:g("m6"),out:$("mo").checked}:null,
+  bowl:$("mv").value?{ob:ov($("mv").value),rc:g("mc"),w:g("mw")}:null});
+ $("mm").textContent="Added to the check list below. Confirm when ready.";renderPV();
+};
+$("ok").onclick=()=>{
+ const use=pend.filter(x=>x.on);
+ if(!use.length){$("mm").textContent="Nothing is ticked.";return}
+ use.forEach(x=>{
+  const s=st(x.n);s.m++;
+  if(x.bat){const b=x.bat;s.inn++;s.r+=b.r;s.b+=b.b;s.f+=b.f;s.s+=b.s;if(!b.out)s.no++;s.hs=Math.max(s.hs,b.r);if(b.r>=100)s.h100++;else if(b.r>=50)s.h50++}
+  if(x.bowl){s.ob+=x.bowl.ob;s.rc+=x.bowl.rc;s.w+=x.bowl.w}
+  s.ct+=x.ct||0;STATS[x.n]=s;
+ });
+ if(pendUrl)DONE.push(pendUrl);
+ saveAll();pend=[];pendUrl="";renderPV();show(cur);
+ $("sl").value="";$("mm").textContent="History updated for "+use.length+" player(s).";
+};
+$("cp").onclick=()=>{
+ const t="const BASE_STATS="+JSON.stringify(STATS)+";\nconst BASE_MATCHES="+JSON.stringify(MATCHES)+";";
+ (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>$("mm").textContent="Copied. Replace the two BASE lines in your file with it.").catch(()=>prompt("Copy this code:",t));
+};
+$("rs").onclick=()=>{
+ if(confirm("Delete all stats and match history saved in this browser?")){
+  ["as_stats","as_done","as_matches","as_live"].forEach(k=>localStorage.removeItem(k));
+  STATS=BASE_STATS;DONE=[];MATCHES=[...BASE_MATCHES];M=null;show(cur);drawMatches();draw();
+ }
+};
+$("mgrBtn").onclick=e=>{
+ e.preventDefault();
+ $("mp").innerHTML=players.map(p=>`<option>${p.name}</option>`).join("");
+ $("mg").classList.add("on");
+};
+const unlock=()=>{if($("pw").value===MANAGER_PASS){$("mgLock").hidden=true;$("mgBody").hidden=false}else alert("Wrong passcode")};
+$("pwBtn").onclick=unlock;
+$("pw").addEventListener("keydown",e=>{if(e.key==="Enter")unlock()});
+
+/* ===== LIVE SCORECARD ===== */
+let M=rd("as_live"),H=[],unl=false,ovEnd=false,busy=false;
+const LM=rd("as_matches")||[];
+let MATCHES=[...LM,...BASE_MATCHES.filter(b=>!LM.some(l=>l.id===b.id))].sort((a,b)=>b.id-a.id);
+const save=()=>{try{localStorage.setItem("as_live",JSON.stringify(M))}catch(e){}};
+const saveM=()=>{try{localStorage.setItem("as_matches",JSON.stringify(MATCHES))}catch(e){}};
+const I=()=>M.inn[M.cur];
+const ovT=b=>Math.floor(b/6)+"."+b%6;
+const sr=(r,b)=>b?(r*100/b).toFixed(1):"-";
+const ours=t=>M&&t===M.us;
+const sq=()=>players.map(p=>p.name);
+const avail=()=>sq().filter(n=>!I().bt.some(b=>b.n.toLowerCase()===n.toLowerCase()));
+const newInn=(team,bowl)=>({team,bowl,runs:0,wk:0,balls:0,ext:0,bt:[],bw:[],fow:[],ov:[],st:0,ns:1,cb:0,end:false,nov:false});
+const snap=()=>{H.push(JSON.stringify(M));if(H.length>40)H.shift()};
+const done=()=>{const x=I();return x.wk>=MAXW||x.balls>=M.ov*6||(M.cur===1&&x.runs>M.inn[0].runs)};
+
+function pick(title,list){
+ return new Promise(res=>{
+  $("pkT").textContent=title;
+  $("pkS").innerHTML=list.map(n=>`<option>${n}</option>`).join("");
+  $("pkSW").hidden=!list.length;$("pkI").value="";
+  $("pk").classList.add("on");
+  $("pkOk").onclick=()=>{
+   const v=$("pkI").value.trim()||(list.length?$("pkS").value:"");
+   if(!v){$("pkI").focus();return}
+   $("pk").classList.remove("on");res(v);
+  };
+ });
+}
+function addBt(n){I().bt.push({n,r:0,b:0,f:0,s:0,out:""});return I().bt.length-1}
+function addBw(n){const w=I().bw,i=w.findIndex(x=>x.n.toLowerCase()===n.toLowerCase());if(i>=0)return i;w.push({n,b:0,r:0,w:0});return w.length-1}
+async function openInn(){
+ const x=I(),b=ours(x.team);
+ x.st=addBt(await pick("Striker"+(b?" (our player)":""),b?avail():[]));
+ x.ns=addBt(await pick("Non-striker",b?avail():[]));
+ x.cb=addBw(await pick("Opening bowler",ours(x.bowl)?sq():[]));
+ save();draw();
+}
+async function ensure(){if(M&&M.open&&!M.res){M.open=false;await openInn()}}
+
+function finish(){
+ const x=I();x.end=true;
+ if(M.cur===0){M.cur=1;M.open=true}
+ else{
+  const a=M.inn[0];
+  M.res=x.runs>a.runs?`${x.team} won by ${MAXW-x.wk} wickets`:x.runs<a.runs?`${a.team} won by ${a.runs-x.runs} runs`:"Match tied";
+  saveMatch();
+ }
+}
+function turn(x,legal,n,l){
+ if(x.nov){x.ov=[];x.nov=false}
+ x.ov.push(l);
+ if(legal)x.balls++;
+ if(n%2)[x.st,x.ns]=[x.ns,x.st];
+ if(legal&&x.balls%6===0){[x.st,x.ns]=[x.ns,x.st];x.nov=true;ovEnd=true}
+}
+async function post(){
+ const x=I();
+ if(!x.end&&done())finish();
+ await ensure();
+ if(ovEnd&&!x.end&&!M.res)x.cb=addBw(await pick("New bowler",ours(x.bowl)?sq():[]));
+ ovEnd=false;save();draw();
+}
+const clearEx=()=>["xw","xn","xb","xl"].forEach(i=>$(i).checked=false);
+const ok=()=>!(busy||!M||M.res||M.open);
+
+async function ball(n){
+ if(!ok())return;busy=true;
+ try{
+  snap();
+  const x=I(),s=x.bt[x.st],w=x.bw[x.cb],g=id=>$(id).checked;
+  const wd=g("xw"),nb=g("xn"),by=g("xb"),lb=g("xl");
+  let tot=n,legal=true,l=String(n);
+  if(wd){tot=n+1;legal=false;l="Wd"+(n?"+"+n:"");x.ext+=tot;w.r+=tot}
+  else if(nb){
+   tot=n+1;legal=false;s.b++;x.ext++;w.r++;l="Nb"+(n?"+"+n:"");
+   if(by||lb){x.ext+=n;l="Nb+"+(by?"B":"LB")+n}
+   else{s.r+=n;w.r+=n;if(n===4)s.f++;if(n===6)s.s++}
+  }
+  else if(by||lb){x.ext+=n;s.b++;w.b++;l=(by?"B":"LB")+n}
+  else{s.r+=n;s.b++;w.r+=n;w.b++;if(n===4)s.f++;if(n===6)s.s++}
+  x.runs+=tot;turn(x,legal,n,l);clearEx();
+  await post();
+ }finally{busy=false}
+}
+async function wkt(){
+ if(!ok())return;busy=true;
+ try{
+  snap();
+  const x=I(),w=x.bw[x.cb],s=x.bt[x.st],how=$("hw").value,wd=$("xw").checked,nb=$("xn").checked;
+  let who=x.st;
+  if(how==="run out")who=confirm("Run out: is the STRIKER out?\nOK = striker, Cancel = non-striker")?x.st:x.ns;
+  const o=x.bt[who];
+  o.out=how+(how==="run out"?"":" b "+w.n);
+  let legal=true,l="W";
+  if(wd){legal=false;l="Wd+W";x.runs++;x.ext++;w.r++}
+  else if(nb){legal=false;l="Nb+W";x.runs++;x.ext++;w.r++;s.b++}
+  else{s.b++;w.b++}
+  if(how!=="run out")w.w++;
+  x.fow.push(`${x.runs}/${x.wk+1} (${o.n}, ${ovT(x.balls+(legal?1:0))})`);x.wk++;
+  turn(x,legal,0,l);clearEx();
+  if(!done()){
+   const k=addBt(await pick("New batter",ours(x.team)?avail():[]));
+   if(who===x.st)x.st=k;else x.ns=k;
+  }
+  await post();
+ }finally{busy=false}
+}
+async function retire(){
+ if(!ok())return;busy=true;
+ try{
+  snap();
+  const x=I();x.bt[x.st].out="retired";
+  const k=addBt(await pick("New batter (striker retired)",ours(x.team)?avail():[]));
+  x.st=k;save();draw();
+ }finally{busy=false}
+}
+
+/* ---- save finished match to history and player stats ---- */
+function saveMatch(){
+ if(M.saved)return;M.saved=true;
+ const rec={id:Date.now(),date:new Date().toISOString().slice(0,10),us:M.us,ov:M.ov,res:M.res,
+  inn:M.inn.map(i=>({team:i.team,runs:i.runs,wk:i.wk,balls:i.balls,ext:i.ext,bt:i.bt,bw:i.bw,fow:i.fow}))};
+ MATCHES.unshift(rec);saveM();
+ const T={},mp={},g=n=>T[n]||(T[n]=st(n));
+ rec.inn.forEach(i=>{
+  if(i.team===M.us)i.bt.forEach(b=>{
+   const p=who(b.n);if(!p)return;const s=g(p.name);mp[p.name]=1;
+   s.inn++;s.r+=b.r;s.b+=b.b;s.f+=b.f;s.s+=b.s;
+   if(!b.out||b.out==="retired")s.no++;
+   s.hs=Math.max(s.hs,b.r);if(b.r>=100)s.h100++;else if(b.r>=50)s.h50++;
+  });
+  else i.bw.forEach(b=>{
+   const p=who(b.n);if(!p)return;const s=g(p.name);mp[p.name]=1;
+   s.ob+=b.b;s.rc+=b.r;s.w+=b.w;
+  });
+ });
+ Object.keys(mp).forEach(n=>g(n).m++);
+ Object.assign(STATS,T);saveAll();show(cur);
+}
+
+/* ---- match history ---- */
+const cardH=i=>`<h4>${i.team}: ${i.runs}/${i.wk} (${ovT(i.balls)} ov)</h4>
+ <div class="tw"><table class="tr"><tr><th>Batter</th><th>Out</th><th>R</th><th>B</th><th>4s</th><th>6s</th><th>SR</th></tr>${i.bt.map(b=>`<tr><td>${b.n}</td><td>${b.out||"not out"}</td><td>${b.r}</td><td>${b.b}</td><td>${b.f}</td><td>${b.s}</td><td>${sr(b.r,b.b)}</td></tr>`).join("")}</table></div>
+ <div class="tw" style="margin-top:10px"><table class="tr"><tr><th>Bowler</th><th>O</th><th>R</th><th>W</th><th>Eco</th></tr>${i.bw.map(b=>`<tr><td>${b.n}</td><td>${ovT(b.b)}</td><td>${b.r}</td><td>${b.w}</td><td>${b.b?(b.r*6/b.b).toFixed(1):"-"}</td></tr>`).join("")}</table></div>
+ <p class="fw2">Extras: ${i.ext} · Fall of wickets: ${i.fow.join(", ")||"-"}</p>`;
+function drawMatches(){
+ $("mhs").innerHTML=MATCHES.length?MATCHES.map((m,i)=>`<div class="mc" data-i="${i}"><small>${m.date} · ${m.ov} overs</small><h3>${m.inn[0].team} vs ${m.inn[1].team}</h3><p>${m.inn.map(x=>`${x.team} ${x.runs}/${x.wk} (${ovT(x.balls)})`).join("<br>")}</p><b>${m.res}</b></div>`).join(""):`<p style="color:var(--mute)">No matches yet. Finished matches are saved here automatically.</p>`;
+}
+$("mhs").addEventListener("click",e=>{
+ const c=e.target.closest(".mc");if(!c)return;
+ const m=MATCHES[+c.dataset.i];
+ $("mb").innerHTML=`<button class="x" onclick="closeM()">✕</button><small>${m.date} · ${m.ov} overs</small><h3>${m.inn[0].team} vs ${m.inn[1].team}</h3><p style="color:var(--red);font-weight:800">${m.res}</p>${m.inn.map(cardH).join("")}`;
+ $("md").classList.add("on");
+});
+
+/* ---- scoreboard ---- */
+function draw(){
+ $("lk").hidden=unl;
+ $("setup").hidden=!(unl&&(!M||M.res));
+ $("spn").hidden=!(unl&&M&&!M.res);
+ if(!M){$("sb").innerHTML=`<p style="color:#9a9dab;margin-bottom:16px">No match is being played right now.</p>`;return}
+ const x=I(),a=M.inn[0],ch=M.cur===1;
+ let line=M.res||(ch?"":"First innings");
+ if(!M.res&&ch){const need=a.runs+1-x.runs,left=M.ov*6-x.balls;line=`${x.team} need ${need} run${need===1?"":"s"} from ${left} ball${left===1?"":"s"} · Required rate ${left?(need*6/left).toFixed(2):"-"}`}
+ const brow=(b,i)=>`<tr><td>${b.n}${!b.out&&i===x.st&&!x.end?" *":""}</td><td>${b.out||(x.end?"not out":(i===x.st||i===x.ns?"batting":""))}</td><td>${b.r}</td><td>${b.b}</td><td>${b.f}</td><td>${b.s}</td><td>${sr(b.r,b.b)}</td></tr>`;
+ $("sb").innerHTML=`<div class="sbh"><div><small>${x.team} batting</small><div class="big">${x.runs}/${x.wk}</div><span>${ovT(x.balls)} / ${M.ov} overs · Run rate ${x.balls?(x.runs*6/x.balls).toFixed(2):"0.00"}</span></div><div class="sbr">${ch?`<b>${a.team} ${a.runs}/${a.wk}</b><span>${ovT(a.balls)} overs</span>`:`<b>${x.bowl} bowling</b>`}<p>${line}</p></div></div>
+ <div class="ovs">This over: ${x.ov.map(l=>`<i class="${l.endsWith("W")?"w":(l==="4"||l==="6")?"b":""}">${l}</i>`).join("")||"-"}</div>
+ <div class="two"><div class="tw"><table class="tr"><tr><th>Batter</th><th>Status</th><th>R</th><th>B</th><th>4s</th><th>6s</th><th>SR</th></tr>${x.bt.map(brow).join("")}</table></div>
+ <div class="tw"><table class="tr"><tr><th>Bowler</th><th>O</th><th>R</th><th>W</th><th>Eco</th></tr>${x.bw.map((b,i)=>`<tr><td>${b.n}${i===x.cb&&!x.end?" *":""}</td><td>${ovT(b.b)}</td><td>${b.r}</td><td>${b.w}</td><td>${b.b?(b.r*6/b.b).toFixed(1):"-"}</td></tr>`).join("")}</table></div></div>
+ <p class="fw"><b>Extras:</b> ${x.ext} · <b>Fall of wickets:</b> ${x.fow.join(", ")||"-"}${M.res?" · <b>Match saved to history</b>":""}</p>`;
+ drawPanel();
+}
+
+/* ---- phone-style scorer panel ---- */
+function drawPanel(){
+ if(!M)return;
+ const x=I(),s=x.bt[x.st],n=x.bt[x.ns],cb=x.bw[x.cb],pv=x.bw.filter((w,i)=>i!==x.cb).pop();
+ const a=M.inn[0],left=M.ov*6-x.balls;
+ const fb=(o)=>`<div class="pcd"><span class="ico">🏏</span><div class="nmb">${o?o.n:"-"}</div><small>${o?o.r+"("+o.b+")":""}</small></div>`;
+ const fw=(o)=>`<div class="pcd"><span class="ico">⚾</span><div class="nmb">${o?o.n:"-"}</div><small>${o?ovT(o.b)+" ov · "+o.r+" runs · "+o.w+" wkts":""}</small></div>`;
+ $("ph1").textContent=`${x.team}  ${x.runs}-${x.wk} (${ovT(x.balls)}/${M.ov})`;
+ $("ph2").textContent="CRR "+(x.balls?(x.runs*6/x.balls).toFixed(2):"0.00");
+ $("pbt").textContent=`${s?s.n+" "+s.r+"("+s.b+")*":""}   ${n?n.n+" "+n.r+"("+n.b+")":""}`;
+ $("pov").textContent="THIS OVER:  "+(x.ov.join("   ")||"-");
+ $("pcs").innerHTML=fb(s)+fw(cb)+fb(n)+fw(pv);
+ $("pres").textContent=M.cur===1?`${x.team} need ${a.runs+1-x.runs} from ${left} balls`:"First innings";
+}
+$("psum").onclick=()=>{
+ if(!M)return;
+ $("mb").innerHTML=`<button class="x" onclick="closeM()">✕</button><h3>${M.inn[0].team} vs ${M.inn[1].team}</h3>${M.inn.filter(i=>i.balls).map(cardH).join("")}`;
+ $("md").classList.add("on");
+};
+$("pshr").onclick=()=>$("shr").click();
+
+/* ---- scorer buttons ---- */
+$("sgo").onclick=async()=>{
+ if(busy)return;
+ const a=$("s1").value.trim()||"Amir Strikers",b=$("s2").value.trim()||"Opponent",f=$("sf").value==="us";
+ M={us:a,ov:+$("so").value||10,cur:0,inn:f?[newInn(a,b),newInn(b,a)]:[newInn(b,a),newInn(a,b)],res:"",open:false,saved:false};
+ H=[];save();draw();busy=true;
+ try{await openInn()}finally{busy=false}
+};
+$("rr").addEventListener("click",e=>{const b=e.target.closest("button");if(b&&b.dataset.r!==undefined)ball(+b.dataset.r)});
+$("wk").onclick=wkt;
+$("rt").onclick=retire;
+$("sw").onclick=()=>{if(!ok())return;snap();const x=I();[x.st,x.ns]=[x.ns,x.st];save();draw()};
+$("en").onclick=async()=>{
+ if(!ok()||!confirm("End this innings?"))return;busy=true;
+ try{snap();finish();await ensure();save();draw()}finally{busy=false}
+};
+$("un").onclick=()=>{
+ if(busy)return;
+ if(M&&M.res){alert("This match is finished and saved.");return}
+ if(H.length){M=JSON.parse(H.pop());save();draw()}
+};
+$("nm").onclick=()=>{
+ if(!M||M.res||confirm("Start a new match? The current unfinished score will be deleted.")){M=null;H=[];save();draw()}
+};
+["xw:xn","xn:xw","xb:xl","xl:xb"].forEach(p=>{
+ const [a,b]=p.split(":");
+ $(a).addEventListener("change",e=>{if(e.target.checked)$(b).checked=false});
+});
+$("lgo").onclick=async()=>{if($("lpw").value===MANAGER_PASS){unl=true;draw();await ensure()}else alert("Wrong passcode")};
+$("lpw").addEventListener("keydown",e=>{if(e.key==="Enter")$("lgo").click()});
+$("shr").onclick=()=>{
+ if(!M){alert("No match to share yet.");return}
+ const t=`*${M.inn[0].team} vs ${M.inn[1].team}*\n`+M.inn.filter(i=>i.balls).map(i=>`${i.team}: ${i.runs}/${i.wk} (${ovT(i.balls)} ov)`).join("\n")+(M.res?`\n${M.res}`:"");
+ window.open("https://wa.me/?text="+encodeURIComponent(t),"_blank");
+};
+draw();drawMatches();
+
+/* ===== countdown ===== */
+function tick(){
+ const el=$("tm"),d=nextMatch?new Date(nextMatch)-new Date():0;
+ if(!nextMatch||d<=0){el.innerHTML="";return}
+ $("nmTitle").textContent=nextMatchName;
+ const v=[[Math.floor(d/864e5),"Days"],[Math.floor(d/36e5)%24,"Hrs"],[Math.floor(d/6e4)%60,"Min"],[Math.floor(d/1e3)%60,"Sec"]];
+ el.innerHTML=v.map(x=>`<div><b>${String(x[0]).padStart(2,"0")}</b><span>${x[1]}</span></div>`).join("");
+}
+tick();setInterval(tick,1000);
+
+/* ===== registration form ===== */
+$("regForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const v=id=>$(id).value.trim(),m=$("msg");
+ if(!v("n")||!v("a")||!v("p")||!v("c")){m.textContent="Please fill in name, age, phone and city.";m.style.color="#d71920";return}
+ const s=`*New Player Registration - Amir Strikers*\nName: ${v("n")}\nAge: ${v("a")}\nPhone: ${v("p")}\nCity: ${v("c")}\nRole: ${v("r")}\nBatting: ${v("h")}\nBowling: ${v("b")}\nExperience: ${v("x")}\nAchievements: ${v("m")||"-"}`;
+ m.style.color="#1a7f37";m.textContent="Opening WhatsApp. Press send to finish your application.";
+ window.open(`https://wa.me/${v("o")}?text=${encodeURIComponent(s)}`,"_blank");
+});
+</script>
+</body>
+</html>
